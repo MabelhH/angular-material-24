@@ -15,12 +15,23 @@ import { BodyComponent } from './body/body.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+import {MatDialogModule} from '@angular/material/dialog';
+import { DialogoComponent } from './dialogo/dialogo.component';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { MensageComponent } from './mensage/mensage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavegacionComponent,
-    BodyComponent
+    BodyComponent,
+    DialogoComponent,
+    MensageComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -34,8 +45,17 @@ import { MatMenuModule } from '@angular/material/menu';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatInputModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatDialogModule,
+    RouterLink,
+    RouterLinkActive,
+    FormsModule
+ 
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })

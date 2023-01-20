@@ -1,0 +1,23 @@
+<div class="container">
+  <br>
+  <h1 class="text-center fs-1"><strong>Ejercicio Angular</strong></h1>
+  <br>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOk9OJxzmhpR08MC2gvrSc2PPPGh3w75a6U_sfSALYW9BPR1xmpjHXDkIFfUGjLkpUMsk&usqp=CAU" alt="" width="600px" height="400px" >
+  <ol>
+    <li>
+      <mat-form-field appearance="fill">
+        <mat-label>What's your name?</mat-label>
+        <input matInput  [(ngModel)]="name">
+      </mat-form-field>
+    </li>
+    <li>
+      <button mat-raised-button color="primary" (click)="openDialog()">Pick one</button>
+    </li>
+    <li *ngIf="animal">
+      You chose: <i>{{animal}}</i>
+    </li>
+  </ol>   
+</div>
+ 
+
+  

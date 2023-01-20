@@ -3,11 +3,12 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar >Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item  class="border border-info" >Inicio</a>
+      <a mat-list-item  class="border border-info" routerLink="/dialogo">Nosotros</a>
+      <a mat-list-item  class="border border-info" routerLink="/body">Tienda</a>
+    
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -20,8 +21,11 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>material-24</span>
+      <span>menu de navegacion</span>
     </mat-toolbar>
     <!-- Add Content Here -->
+    <router-outlet></router-outlet>
+     <!-- <app-body></app-body> 
+     <app-dialogo></app-dialogo> -->
   </mat-sidenav-content>
 </mat-sidenav-container>

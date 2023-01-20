@@ -19,3 +19,25 @@
 .dashboard-card-content {
   text-align: center;
 }
+p{
+  margin: 20px;
+}
+.boton{
+  margin: 25px;
+  background-color: aqua;
+  border-radius: 4px;
+  font-size: 20px;
+  padding: 8px;
+  width: 150px;
+}
+.texto{
+ text-align: center;
+ color: brown;
+ font-size: 20px;
+}
+.texto1{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: sans-serif;
+}

@@ -1,5 +1,5 @@
 <div class="grid-container">
-  <h1 class="mat-h1">Dashboard</h1>
+  <h1 class="mat-h1 texto1">Tienda</h1>
   <mat-grid-list cols="2" rowHeight="350px">
     <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
       <mat-card class="dashboard-card">
@@ -16,9 +16,13 @@
           </mat-card-title>
         </mat-card-header>
         <mat-card-content class="dashboard-card-content">
-          <div>Card Content Here</div>
+          <div class="texto">shampoo 20% de descuento</div>
+          <img src="https://belcorpperu.vtexassets.com/arquivos/ids/208305/200097066-FotoFondoBlanco.jpg?v=638041538904370000" alt="" width="200" height="150">
+          <img src="https://e39a9f00db6c5bc097f9-75bc5dce1d64f93372e7c97ed35869cb.ssl.cf1.rackcdn.com/42891860-pTJgVjK9.png" alt="" width="200" height="150">
+          <p><button class="boton">$10</button><button class="boton" >$15</button></p>
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
 </div>
+

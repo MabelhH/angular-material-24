@@ -1,0 +1,27 @@
+.container{
+    margin-top: 80px;
+    background-color: rgb(235, 218, 250);
+    padding: 40px;
+    border-radius: 6px;
+}
+img{
+    margin-left: 350px;
+}
+ol{
+    border-radius: 8px;
+    background-color: rgb(231, 244, 231);
+    padding: 40px;
+    margin-top: 60px;
+    font-size: 25px;
+
+
+}
+button{
+    background-color: aqua;
+    width: 250px;
+    padding: 25px;
+}
+h1{
+    color: rgb(0, 0, 0);
+}
+
